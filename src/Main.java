@@ -38,7 +38,6 @@ public class Main {
         }
     }
 
-    // NOVO: calcula o resultado da expressao em RPN usando uma pilha
     private static double avaliarRPN(List<String> rpn) {
 
         Stack<Double> pilha = new Stack<>();
@@ -63,7 +62,6 @@ public class Main {
         return pilha.pop();
     }
 
-    // NOVO: realiza a operacao matematica
     private static double calcular(double primeiro, double segundo, String operador) {
 
         switch (operador) {
